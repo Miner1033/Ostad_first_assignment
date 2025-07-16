@@ -1,0 +1,656 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediBridge - Healthcare Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .floating-card {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .section-padding {
+            padding: 64px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="container">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center space-x-2">
+                        <img src="Logo.svg" alt="MediBridge Logo" class="h-8">
+                        <span class="text-xl font-bold text-gray-900">MediBridge</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#" class="text-gray-900 hover:text-emerald-600 px-3 py-2 text-sm font-medium">About Us</a>
+                        <div class="relative">
+                            <a href="#" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium flex items-center">
+                                Features
+                                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                            </a>
+                        </div>
+                        <a href="#" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium">Find Doctor</a>
+                        <a href="#" class="text-gray-700 hover:text-emerald-600 px-3 py-2 text-sm font-medium">Blog</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="text-gray-700 hover:text-emerald-600 text-sm font-medium border border-gray-200 hover:border-emerald-600 rounded-lg transition-colors px-6 py-2">
+                        Log In
+                    </a>
+     <a href="#" class="text-white rounded-lg text-sm font-medium transition-colors px-6 py-2 bg-[#017D6E] hover:bg-[#01665A]">
+   Register
+</a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-padding bg-white pt-24">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column -->
+                <div class="lg:pr-8">
+                    <div class="mb-6">
+                        <img src="Button.svg" alt="Top-rated healthcare service" class="h-8">
+                    </div>
+
+                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-medium text-gray-900 leading-tight mb-6" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        Transforming Healthcare for a <span class="whitespace-nowrap">Better Tomorrow</span>
+                    </h1>
+
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                        With a focus on innovation, compassion, and personalized care, we are committed to guiding you towards a healthier and more vibrant tomorrow.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                       <a href="#" class="bg-[#017D6E] hover:bg-[#01665A] text-white px-8 py-3 rounded-lg font-medium transition-colors text-center">
+    Get Started
+</a>
+
+                        <a href="#" class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:text-emerald-600 hover:border-emerald-600 transition-colors text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="relative">
+                    <div class="relative z-10">
+                        <img src="Content.png" alt="Healthcare Professional" class="w-full h-auto rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="py-12 bg-gray-50">
+        <div class="container">
+            <div class="text-center">
+                <p class="text-gray-500 font-medium mb-8" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Trusted by
+                </p>
+                <div class="flex flex-wrap justify-center items-center gap-8">
+                    <img src="i5 (5).svg" alt="Logo 1" class="h-8 transition-transform duration-300 hover:scale-105 opacity-60 hover:opacity-100" />
+                    <img src="i5 (4).svg" alt="Logo 2" class="h-8 transition-transform duration-300 hover:scale-105 opacity-60 hover:opacity-100" />
+                    <img src="i5 (3).svg" alt="Logo 3" class="h-8 transition-transform duration-300 hover:scale-105 opacity-60 hover:opacity-100" />
+                    <img src="i5 (2).svg" alt="Logo 4" class="h-8 transition-transform duration-300 hover:scale-105 opacity-60 hover:opacity-100" />
+                    <img src="i5 (1).svg" alt="Logo 5" class="h-8 transition-transform duration-300 hover:scale-105 opacity-60 hover:opacity-100" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-900 mb-4 leading-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Experience the Difference<br />
+                    in Our Healthcare Approach
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Transform your healthcare journey with our innovative and personalized approach
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
+                    <div class="w-16 h-16 bg-[#017D6E] rounded-full flex items-center justify-center mx-auto mb-6">
+    <img src="Vector.png" alt="Expert Care Icon" class="w-6 h-6" />
+</div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Expert Care</h3>
+                    <p class="text-gray-600">Our experienced healthcare professionals provide the highest quality care.</p>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
+                   <div class="w-16 h-16 bg-[#017D6E] rounded-full flex items-center justify-center mx-auto mb-6">
+    <img src="user-circle-dashed.png" alt="Personalized Care Icon" class="w-6 h-6" />
+</div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Personalized Approach</h3>
+                    <p class="text-gray-600">We tailor our services to meet your unique needs.</p>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
+                   <div class="w-16 h-16 bg-[#017D6E] rounded-full flex items-center justify-center mx-auto mb-6">
+    <img src="plant.png" alt="Wellness Icon" class="w-6 h-6" />
+</div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Focus on Wellness</h3>
+                    <p class="text-gray-600">We emphasize preventive care and wellness promotion.</p>
+                </div>
+
+                <!-- Feature Card 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
+                   <div class="w-16 h-16 bg-[#017D6E] rounded-full flex items-center justify-center mx-auto mb-6">
+    <img src="users-four.png" alt="Community Icon" class="w-6 h-6" />
+</div>
+
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Community Connection</h3>
+                    <p class="text-gray-600">We're committed to serving and giving back to our community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding bg-gray-50">
+        <div class="container">
+            <div class="bg-white rounded-3xl p-8 lg:p-12 shadow-sm">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Column - Image -->
+                    <div class="order-2 lg:order-1">
+                        <div class="relative rounded-2xl overflow-hidden">
+                            <img src="Content.svg" alt="Healthcare Services" class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Content -->
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl lg:text-4xl font-medium text-gray-900 mb-6 leading-tight">
+                            Unveiling a Spectrum of Specialized Offerings
+                        </h2>
+
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            Discover a tailored approach to your health with our versatile range of specialized services, ensuring every aspect of your healthcare journey is seamlessly addressed.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-emerald-300 transition-all duration-200">
+<div class="w-6 h-6 bg-[#017D6E] rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Diagnostic Imaging</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-emerald-300 transition-all duration-200">
+<div class="w-6 h-6 bg-[#017D6E] rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Mental Health Services</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-emerald-300 transition-all duration-200">
+<div class="w-6 h-6 bg-[#017D6E] rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Laboratory Services</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-emerald-300 transition-all duration-200">
+<div class="w-6 h-6 bg-[#017D6E] rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Rehabilitation Services</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-emerald-300 transition-all duration-200">
+<div class="w-6 h-6 bg-[#017D6E] rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Home Healthcare</span>
+                            </div>
+
+                            <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 hover:border-emerald-300 transition-all duration-200">
+<div class="w-6 h-6 bg-[#017D6E] rounded-full flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <span class="text-gray-700 font-medium">Geriatric Care</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Healthcare Heroes Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-900 mb-4 leading-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Meet the Healthcare<br>Heroes Ready to Serve You
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                    Discover the dedicated professionals behind our exceptional care just for you
+                </p>
+            </div>
+
+
+
+
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Card 1 -->
+   
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 w-full max-w-xs">
+    <div class="mb-4">
+        <span class="inline-block px-2 py-1 text-xs font-semibold text-green-600 bg-green-100 rounded-full mb-3">Available</span>
+        
+        <!-- ⛔ Removed border styles from image -->
+        <img src="Image.png" alt="Dr. Harry Marcelo"
+             class="w-full h-90 object-cover mb-3 rounded-[14.89px]">
+        
+        <div class="text-left">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Dr. Harry Marcelo</h3>
+            <p class="text-emerald-600 text-sm font-medium">Endocrinologist</p>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-between mt-4">
+        <div>
+            <p class="text-xl font-bold text-gray-900">
+                $64 <span class="text-gray-500 text-xs font-normal">/session</span>
+            </p>
+        </div>
+       <a href="#">
+  <img src="btn.png" alt="Book Now Button"
+       class="w-auto h-10 hover:scale-105 transition-transform duration-300 cursor-pointer">
+</a>
+
+    </div>
+</div>
+
+
+    <!-- Card 2 -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 w-full max-w-xs margin-bottom-1">
+    <div class="mb-4">
+        <span class="inline-block px-2 py-1 text-xs font-semibold text-green-600 bg-green-100 rounded-full mb-3">Available</span>
+        
+        <!-- ⛔ Removed border styles from image -->
+        <img src="Image (2).png" alt="Dr. Harry Marcelo"
+             class="w-full h-90 object-cover mb-3 rounded-[14.89px]">
+        
+        <div class="text-left margin-top-100">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Dr. Putri Raviola</h3>
+            <p class="text-emerald-600 text-sm font-medium">Cardiologist</p>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-between mt-4">
+        <div>
+            <p class="text-xl font-bold text-gray-900">
+                $72 <span class="text-gray-500 text-xs font-normal">/session</span>
+            </p>
+        </div>
+       <a href="#">
+  <img src="btn.png" alt="Book Now Button"
+       class="w-auto h-10 hover:scale-105 transition-transform duration-300 cursor-pointer">
+</a>
+
+    </div>
+</div>
+
+
+    <!-- Card 3 -->
+   <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 w-full max-w-xs">
+    <div class="mb-4">
+        <span class="inline-block px-2 py-1 text-xs font-semibold text-green-600 bg-green-100 rounded-full mb-3">Available</span>
+        
+        <!-- ⛔ Removed border styles from image -->
+        <img src="Image (1).png" alt="Dr. Harry Marcelo"
+             class="w-full h-90 object-cover mb-3 rounded-[14.89px]">
+        
+        <div class="text-left">
+            <h3 class="text-lg font-bold text-gray-900 mb-1">Dr. Harry Marcelo</h3>
+            <p class="text-emerald-600 text-sm font-medium">Endocrinologist</p>
+        </div>
+    </div>
+
+    <div class="flex items-center justify-between mt-4">
+        <div>
+            <p class="text-xl font-bold text-gray-900">
+                $64 <span class="text-gray-500 text-xs font-normal">/session</span>
+            </p>
+        </div>
+        <a href="#">
+  <img src="btn.png" alt="Book Now Button"
+       class="w-auto h-10 hover:scale-105 transition-transform duration-300 cursor-pointer">
+</a>
+    </div>
+</div>
+
+</div>
+
+
+
+<!-- Button -->
+      <div class="text-center mt-8">
+    <a href="#" 
+       class="inline-flex items-center justify-center px-8 py-3 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition-colors"
+       style="border: 1px solid #91959526; border-color: #91959526; border-style: solid;">
+        See All Doctors
+    </a>
+</div>
+
+
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    
+
+    <section class="section-padding bg-gray-50">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl xl:text-5xl font-medium text-gray-900 mb-4 leading-tight" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                See What Our<br>Patients Have to Say
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto" style="font-family: 'Plus Jakarta Sans', sans-serif;">
+                Discover firsthand accounts of our patients' experiences
+            </p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-center">
+            <!-- Testimonial 1 -->
+            <div class="bg-white w-[387.11px] h-[372.22px] p-[29.78px] rounded-[14.89px] border-[0.93px] border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                <blockquote class="text-lg text-gray-700 leading-relaxed">
+                    "Medi Bridge has been a true lifesaver for me and my family. When my father fell ill, we turned to them for help, and they exceeded our expectations in every way."
+                </blockquote>
+                <div class="flex items-center mt-6">
+                    <img src="Avatar (1).svg" alt="Mecca Rachel" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-900">Mecca Rachel</h4>
+                        <p class="text-gray-500">24 years old</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 - Video -->
+            <div class="bg-white w-[387.11px] h-[372.22px] p-[0px] rounded-[14.89px] border-[0.93px] border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden flex flex-col justify-between">
+                <div class="relative h-full">
+                    <img src="Testimonial Card.svg" alt="Video testimonial" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer">
+<div
+  class="w-0 h-0 border-l-[20px] border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent ml-1"
+  style="border-left-color: #017D6E;">
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white w-[387.11px] h-[372.22px] p-[29.78px] rounded-[14.89px] border-[0.93px] border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+                <blockquote class="text-lg text-gray-700 leading-relaxed">
+                    "I've been a patient at Medi Bridge for years, and they consistently deliver outstanding care. Their dedication to patient well-being is evident in every interaction."
+                </blockquote>
+                <div class="flex items-center mt-6">
+                    <img src="Avatar1.svg" alt="Adam Jackson" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-900">Adam Jackson</h4>
+                        <p class="text-gray-500">27 years old</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center">
+            <a href="#" class="inline-flex items-center justify-center px-8 py-3 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 hover:border-gray-400 transition-colors">
+                See All Testimonials
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- FAQ Header -->
+                <div class="lg:pr-8">
+                    <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+                        Frequently<br>Asked Questions
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Still have something to ask? Contact our sales team
+                    </p>
+                    <a href="#" class="inline-block bg-[#017D6E] hover:bg-[#01665A] text-white px-8 py-3 rounded-lg transition-colors font-medium">
+    Contact Us
+</a>
+
+                </div>
+
+                <!-- FAQ Items -->
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 - Active -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <div class="text-white p-6 bg-[#017D6E]">
+    <div class="flex justify-between items-center">
+        <h3 class="font-semibold text-lg">How do I schedule an appointment?</h3>
+        <span class="text-2xl transform rotate-180">^</span>
+    </div>
+</div>
+
+                        <div class="p-6 bg-white">
+                            <p class="text-gray-700">
+                                Scheduling an appointment at Medi Bridge is easy. You can call our office directly or use our online appointment booking system on our website. Simply select your preferred date and time, and our staff will confirm your appointment promptly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-semibold text-gray-800">What types of healthcare services does we offer?</h3>
+                                <span class="text-2xl text-gray-600">v</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-semibold text-gray-800">Are walk-in appointments available?</h3>
+                                <span class="text-2xl text-gray-600">v</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-semibold text-gray-800">Does Medi Bridge accept insurance plans?</h3>
+                                <span class="text-2xl text-gray-600">v</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden hover:bg-gray-50 transition-colors cursor-pointer">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center">
+                                <h3 class="font-semibold text-gray-800">What safety measures does Medi Bridge have?</h3>
+                                <span class="text-2xl text-gray-600">v</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Banner Section -->
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="flex items-center justify-center mx-auto" style="
+                max-width: 1220.89px;
+                height: 382.64px;
+                gap: 44.67px;
+                border-radius: 14.89px;
+                padding: 59.56px;
+                opacity: 1;
+                position: relative;
+                overflow: hidden;
+            ">
+                <img src="Banner.svg" alt="Medi Bridge Banner" class="max-w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+   
+<footer class="bg-white pt-16 pb-8">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <!-- Flex row with 4 columns -->
+    <div class="flex flex-wrap justify-between items-start mb-12 gap-8">
+      
+      <!-- Medi Bridge Logo + Tagline -->
+      <div class="flex items-center space-x-4 flex-shrink-0 min-w-[250px]">
+        <!-- Logo Image -->
+        <img src="lll.svg".svg" 
+             alt="Medi Bridge Logo" 
+             class="w-12 h-12 object-contain rounded-md" />
+
+        <!-- Text -->
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900">Medi Bridge</h2>
+          <p class="text-gray-600 text-sm">Empowering Health, Inspiring Lives.</p>
+        </div>
+      </div>
+      
+      <!-- Company Column -->
+      <div class="min-w-[150px]">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">About Us</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Careers</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Doctors</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Blog</a></li>
+        </ul>
+      </div>
+
+      <!-- Services Column -->
+      <div class="min-w-[150px]">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Services</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Clinics</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Healthcare</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Training Center</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Online Consultation</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Column -->
+      <div class="min-w-[150px]">
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">Social Media</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Instagram</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Facebook</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">Twitter</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-emerald-600 transition-colors">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-200 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 mb-4 md:mb-0">© Copyright Medi Bridge 2024</p>
+        <div class="flex flex-wrap gap-4 md:gap-6">
+          <a href="#" class="text-gray-500 hover:text-emerald-600 transition-colors">FAQ</a>
+          <a href="#" class="text-gray-500 hover:text-emerald-600 transition-colors">Terms of Condition</a>
+          <a href="#" class="text-gray-500 hover:text-emerald-600 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-emerald-600 transition-colors">Changelog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+</body>
+
+</html>
